@@ -1,8 +1,7 @@
 require 'rspec'
 
 class Post
-  attr_reader :content
-
+  attr_reader :content, :author
   def initialize(args)
     @content = args[:content]
     @author = args[:author]
@@ -19,6 +18,9 @@ describe Post do
       post.content { should exist }
     end
 
+    it "has author" do
+      expect(post.author).to eq "Steve Dave"
+    end
 
 
 end
