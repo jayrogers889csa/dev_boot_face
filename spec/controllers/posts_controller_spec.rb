@@ -1,20 +1,6 @@
 require 'rspec'
 
-class Post
-  attr_reader :content, :author
-  def initialize(args)
-    @content = args[:content]
-    @author = args[:author]
-  end
-
-  def create_post(content, author)
-  end
-end
-
-
-
-
-describe Post do
+describe PostsController do
   let(:post) {Post.new(content: "Here's my post!", author: "Steve Dave")}
 
   it "has content" do
@@ -28,13 +14,11 @@ describe Post do
   context "when creating a new post" do
     it "persists the post to the database" do
       mock_post = double(:post)
-      mock_post.should_receive(:save).and_return(true)
+      mock_post.should_receive(:create).and_return(true)
       Post.stub(:new => mock_post)
 
-      # redirect_to '/user/:id'
-      response.should redirect_to '/timeline'
+      expect(response).to eq 'posts/index'
     end
-
   end
 
 
