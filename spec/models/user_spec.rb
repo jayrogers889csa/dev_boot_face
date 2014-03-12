@@ -5,11 +5,10 @@ describe User do
 
   context 'User sign up' do
     it 'User should be able to sign up' do
-      # subject {user}
       user.stub(:save).should be_true
-
-      # {should exist}
     end
+
+
   end
 
 end
