@@ -1,3 +1,5 @@
+require 'rinku'
+
 class PostsController < ApplicationController
 
   def index
