@@ -46,6 +46,8 @@ end
 
 gem 'devise'
 
+gem 'pry'
+
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.1'

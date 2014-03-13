@@ -1,8 +1,12 @@
-<p><strong>User: </strong> 
+<p><strong>User: </strong>
 	<%= @post.user_id %></p>
-<p><strong>Post: </strong> 
+<p><strong>Post: </strong>
 	<%= @post.content %></p>
+<p><strong>Comments:</strong> </p>
+<% @post.comments.each do |comment| %>
+  <p> <%= comment.content %> </p>
+<% end %>
 
-
+<p><%= link_to 'Add Comment', new_comment_path, post_id: @post.id, method: :get %></p>
 <%= link_to 'Back', posts_path %>
 <%= link_to 'Edit', edit_post_path(@post) %>
