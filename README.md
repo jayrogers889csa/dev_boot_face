@@ -28,7 +28,8 @@ In project root directory, run
 - [Daniel](https://github.com/dandydanny)
 
 Brought to you by:
-!(http://i.imgur.com/GContTH.png)
+
+![alt text](http://i.imgur.com/GContTH.png "Taco Corp")
 
 Spring 2014 at Dev Bootcamp Chicago
 
