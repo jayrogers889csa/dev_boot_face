@@ -4,10 +4,27 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def create
-    @post = Post.create params[:post]
-    redirect_to posts_path
+  def new
+  	@post = Post.new(post_params)
   end
 
+  def create
+    @post = Post.new(post_params)
+    if @post.save
+			redirect_to @post
+		else
+			render 'new'
+		end		
+  end
+
+  def show
+		@post = Post.where(id: params[:id]).first
+	end
+
+private
+	
+	def post_params
+		params.require(:post).permit(:content, :user_id, :group_id => nil)
+	end
 
 end
