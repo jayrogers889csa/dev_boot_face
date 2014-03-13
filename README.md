@@ -1,6 +1,6 @@
 # DevBootFace
 
-Imagine: a collection of users online who can self-organize into groups, and share ideas via text posts, pictures, web links, etc. Other users can comment on the posts, and commment on comments. DevBootFace facilitate this free exhange of information, allowing ideas to flourish.
+Imagine: a collection of users online who can self-organize into groups, and share ideas via text posts, pictures, web links, etc. Other users can comment on the posts, and commment on other comments. DevBootFace facilitates this free exhange of information, allowing ideas to flourish.
 
 DevBootFace is your kind of face... uh, boot... thing.
 
