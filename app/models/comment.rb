@@ -1,5 +1,5 @@
 class Comment < ActiveRecord::Base
-  belong_to :commentable, polymorphic: true
-  belong_to :user
+  belongs_to :commentable, polymorphic: true
+  belongs_to :user
 end
 
