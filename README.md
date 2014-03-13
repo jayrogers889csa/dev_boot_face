@@ -28,7 +28,7 @@ In project root directory, run
 - [Daniel](https://github.com/dandydanny)
 
 Brought to you by:
-!(http://imgur.com/GContTH)
+[Imgur](http://i.imgur.com/GContTH.png)
 
 Spring 2014 at Dev Bootcamp Chicago
 
