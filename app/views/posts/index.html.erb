@@ -3,7 +3,7 @@
 <%= link_to 'New Post', new_post_path %>
 	<% if @posts.any? %>
   <% @posts.each do |post| %>
-    <h4><%= link_to post.title, post_path(post) %></h4>
+    <h4><%= link_to post.user_id, post_path(post) %></h4>
     <%= simple_format post.content %>
     <hr>
   <% end %>
