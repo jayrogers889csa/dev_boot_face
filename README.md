@@ -27,5 +27,8 @@ In project root directory, run
 - [Jack](https://github.com/jdubnicek)
 - [Daniel](https://github.com/dandydanny)
 
+Brought to you by:
+(http://imgur.com/GContTH)
+
 Spring 2014 at Dev Bootcamp Chicago
 
