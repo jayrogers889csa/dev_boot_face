@@ -11,9 +11,9 @@ DevBootFace is your kind of face... uh, boot... thing.
 ### To run locally:
 - Clone repo to local machine
 - `bundle`
-- rake db:create
-- rake db:migrate
-- rails s
+- `rake db:create`
+- `rake db:migrate`
+- `rails s`
 - visit http://localhost:3000
 
 ### Running the test suite:
@@ -27,5 +27,5 @@ In project root directory, run
 - [Jack](https://github.com/jdubnicek)
 - [Daniel](https://github.com/dandydanny)
 
-Spring 2014
+Spring 2014 at Dev Bootcamp Chicago
 
