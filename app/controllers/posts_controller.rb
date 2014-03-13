@@ -22,8 +22,6 @@ class PostsController < ApplicationController
 
   def show
 		@post = Post.where(id: params[:id]).first
-		# @post = Post.find(params[:id])
-		# puts @post.content
 	end
 
 	def edit
@@ -37,6 +35,11 @@ class PostsController < ApplicationController
 		else
 			render 'edit'
 		end		
+	end
+
+	def destroy
+		Post.delete(params[:id])
+		redirect_to posts_path
 	end
 
 private
