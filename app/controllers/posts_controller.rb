@@ -23,6 +23,15 @@ class PostsController < ApplicationController
 		# puts @post.content
 	end
 
+	def edit
+		@post = Post.where(id: params[:id]).first
+		if @post.update
+			redirect_to posts_path
+		else
+			render 'new'
+		end		
+	end
+
 private
 	
 	def post_params
