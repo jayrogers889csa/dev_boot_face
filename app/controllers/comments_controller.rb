@@ -1,8 +1,6 @@
 class CommentsController < ApplicationController
   def new
-
     @post_id = params[:post_id]
-    binding.pry
     @user_id = current_user.id
     @comment = Comment.new()
   end

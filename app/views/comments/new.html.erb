@@ -5,7 +5,7 @@
   <%= f.label :content %>
   <%= f.text_area :content %>
 </p>
-<%= f.hidden_field :commentable_type, value: "post"%>
+<%= f.hidden_field :commentable_type, value: Post %>
 <%= f.hidden_field :commentable_id, value: @post_id%>
 <%= f.hidden_field :user_id, value: @user_id%>
 <%= f.submit %>
