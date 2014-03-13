@@ -1,28 +1,26 @@
-== README
+== DevBootFace
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requirements:
+Rails 4.0.2
+Ruby 2.0.0p451
 
-Things you may want to cover:
+To run locally:
+Clone repo to local machine
+`bundle`
 
-* Ruby version
+rake db:create
+rake db:migrate
+rails s
+visit http://localhost:3000
 
-* System dependencies
+Running the test suite:
+In project root directory, run
+ruby /spec/controllers/posts_controller_spec.rb
+ruby /spec/controllers/users_controller_spec.rb
 
-* Configuration
+Collaborators:
+https://github.com/cprater
+https://github.com/dustincfox
+https://github.com/jdubnicek
+https://github.com/dandydanny
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
