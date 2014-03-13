@@ -7,8 +7,8 @@ describe User do
     it 'User should be able to sign up' do
       user.stub(:save).should be_true
     end
-
-
   end
+
+
 
 end
