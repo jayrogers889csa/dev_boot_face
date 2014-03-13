@@ -27,5 +27,9 @@ In project root directory, run
 - [Jack](https://github.com/jdubnicek)
 - [Daniel](https://github.com/dandydanny)
 
+Brought to you by:
+
+![alt text](http://i.imgur.com/GContTH.png "Taco Corp")
+
 Spring 2014 at Dev Bootcamp Chicago
 
