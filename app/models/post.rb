@@ -4,14 +4,5 @@ class Post < ActiveRecord::Base
   belongs_to :user
   belongs_to :group
 
-  attr_reader :content, :author
-
-  def initialize(params)
-    @content = params[:content]
-    @author = params[:author]
-  end
-
-  def create_post(content, author)
-  end
 end
 
