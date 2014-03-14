@@ -1,5 +1,12 @@
 require 'spec_helper'
 
 describe Post do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  context "has attributes" do 
+    it "should have attribute content" do
+      first_post = Post.new(content: "Lorum Ipsum etc etc")
+      expect(first_post.content).to eq("Lorum Ipsum etc etc")
+    end
+  end
+
 end
