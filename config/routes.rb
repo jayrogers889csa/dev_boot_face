@@ -15,6 +15,9 @@ DevBootFace::Application.routes.draw do
   end
   # get '/posts', to: 'posts#show'
 
+  resources :groups do
+    resources :users
+  end
   # You can have the root of your site routed with "root"
 
   end
